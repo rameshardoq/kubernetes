@@ -14,6 +14,7 @@ jobs:
           name: the second stage
           command: |
             ls -al
+            helm version
             pwd
             checkov -f /root/project/rendered.yml
-            checkov -f /root/project/pod.yml 
+             
