@@ -9,12 +9,13 @@ jobs:
           name: The First Step
           command: |
             pip install checkov
+            checkov --version
+            apt-get update
 
       - run:
           name: the second stage
           command: |
             ls -al
-            helm version
             pwd
             checkov -f /root/project/rendered.yml
              
