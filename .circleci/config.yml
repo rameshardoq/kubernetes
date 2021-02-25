@@ -21,4 +21,5 @@ jobs:
           name: The third stage
           command: |
             ls
+            pwd
             checkov -f /root/project/pod.yml 
