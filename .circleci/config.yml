@@ -15,4 +15,10 @@ jobs:
           command: |
             ls -al
             pwd
-            checkov -f /root/project/rendered.yml 
+            checkov -f /root/project/rendered.yml
+
+      - run:
+          name: The third stage
+          command: |
+            ls
+            checkov -f /root/project/pod.yml 
