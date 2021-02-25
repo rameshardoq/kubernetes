@@ -16,10 +16,4 @@ jobs:
             ls -al
             pwd
             checkov -f /root/project/rendered.yml
-
-      - run:
-          name: The third stage
-          command: |
-            ls
-            pwd
             checkov -f /root/project/pod.yml 
