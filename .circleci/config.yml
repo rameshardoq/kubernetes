@@ -15,4 +15,4 @@ jobs:
           command: |
             ls -al
             pwd
-            checkov -f /root/project/test/rendered.yml -f /root/project/test/pod.yml 
+            checkov -f /root/project/rendered.yml 
